@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap");
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Google Sans", sans-serif;
+  height: 100vh;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(216, 241, 230, 0.46) 0.1%,
+    rgba(233, 226, 226, 0.28) 90.1%
+  );
+  margin: 0;
+}
+
+.container {
+  background: linear-gradient(90deg, #9adb89, rgba(215, 25, 221, 0.541));
+  padding: 20px;
+  width: 65%;
+
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+  color: #eff8cf;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+h1 {
+  background: none;
+  font-size: 52px;
+  font-weight: 800;
+  color: #2e2828;
+  margin: 10px;
+  text-align: center;
+}
+h2 {
+  background: none;
+  font-size: 32px;
+  margin: 0;
+  font-weight: 800;
+  color: #2e2828;
+  text-align: center;
+}
+.play-ground {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.player1,
+.player2 {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  flex: 1;
+  height: 180px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+.player1:hover {
+  transform: scale(1.1);
+}
+.player2:hover {
+  transform: scale(1.1);
+}
+
+.play-ground img {
+  width: 180px;
+}
+
+.hidden {
+  display: none;
+}
+
+.end-text {
+  font-weight: 500;
+  font-size: 20px;
+  color: rgb(46, 44, 44);
+}
+.end-text p {
+  margin: 0;
+}
+
+#button,
+#names-btn {
+  background-color: #2f3b2a;
+  width: 70%;
+  padding: 14px;
+  cursor: pointer;
+  margin-top: 30px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+#button:hover,
+#names-btn:hover {
+  transform: translateY(4px);
+  opacity: 0.9;
+}
+#names-btn {
+  width: auto;
+}
+@media (max-width: 600px) {
+  .container {
+    width: 85%;
+  }
+  .play-ground img {
+    width: 130px;
+  }
+}
